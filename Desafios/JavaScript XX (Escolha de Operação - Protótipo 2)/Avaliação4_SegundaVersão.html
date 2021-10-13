@@ -1,0 +1,78 @@
+<html lang="pt-br">
+	<head>
+	<title>Curso de JavaScript</title>
+	<meta charset="UTF-8">
+		<script>
+		
+		//Declarando Váriaveis
+		
+		let num1 = parseFloat(prompt("Digite o Primeiro Número","Digite aqui"));
+		let num2 = parseFloat(prompt("Digite o Segundo Número","Digite aqui"));
+		let soma, subtração, multiplicacao, divisao;
+		
+		//Pedindo a escolha de Cálculo para o usuário 
+		
+		let escolha = parseInt(prompt("Escolha o cálculo desejado:\n1 - Soma \n2 - Subtração \n3 - Multiplicação \n4 - Divisão"));
+		
+		//Realizando os Cálculo
+		
+		soma = num1+num2;
+		subtracao = num1-num2;
+		multiplicacao = num1*num2;
+		divisao = num1/num2;
+		 
+		//Iniciando Switch Case para a Váriavel - escolha -
+		
+		switch(escolha) {
+		
+			case 1 :
+			
+			document.write("O Resultado de " + num1 + " mais " + num2 + " é igual a " + soma);
+			break
+		
+		
+			case 2 :
+			
+			document.write("O Resultado de " + num1 + " menos " + num2 + " é igual a " + subtracao);
+			break 
+		
+			
+			case 3 :
+		
+			document.write("O Resultado de " + num1 + " multiplicado por " + num2 + " é igual a " + multiplicacao);
+			break
+			
+			
+			case 4 :
+			
+			//Adicionando o IF para divisões com Zero - ELSE para divisões Normais
+			
+			if(multiplicacao == 0){
+			
+			document.write("Não Existe Multiplicação com Zero<br><br>Aperte F5 e Recomeçe");
+			
+		
+			}else{
+		
+			document.write("O Resultado de " + num1 + " dividido por " + num2 + " é igual a " + divisao);
+		
+			}
+			
+			break 
+			
+			
+			default :
+			
+			document.write("Recomeçe e preencha os campos corretamente com os valores desejados");
+			
+		}
+		
+		</script>
+	</head>
+	<body>
+	
+	</body>
+</html>
+		
+		
+		

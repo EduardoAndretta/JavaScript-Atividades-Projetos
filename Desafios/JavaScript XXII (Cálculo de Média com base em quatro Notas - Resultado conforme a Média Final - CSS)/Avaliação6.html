@@ -1,0 +1,46 @@
+<html lang="pt-br">
+	<head>
+	<title>Curso de JavaScript</title>
+	<meta charset="UTF-8">
+		<script>
+		
+		//Declarando Váriaveis
+		
+		let nota1 = parseFloat(prompt("Digite a Primeira nota","Digite aqui"));
+		let nota2 = parseFloat(prompt("Digite a Segunda nota","Digite aqui"));
+		let nota3 = parseFloat(prompt("Digite a Terceira nota","Digite aqui"));
+		let nota4 = parseFloat(prompt("Digite a Quarta nota","Digite aqui"));
+		let media;
+		
+		
+		//Calculando a Média com base em 4 notas
+		
+		media = (nota1+nota2+nota3+nota4)/4;
+		
+		//Informando Situação e Média para o usuário - Com CSS - 
+			
+
+			if(media>=7){
+				
+				document.write("<font size=10 color='green'>Você está Aprovado!!!</font>");
+				document.write("<font size=10 color='green'><br><br>Sua Média é " +media+ "!!!</font>");
+			
+			}else if(media<5){
+			
+				document.write("<font size=10 color='red'>Você está Reprovado!!!</font>");
+				document.write("<font size=10 color='red'><br><br>Sua Média é " +media+ "!!!</font>");
+			
+			}else{
+				
+				document.write("<font size=10 color='#fff410'>Você está de Recuperação!!!</font>");
+				document.write("<font size=10 color='#fff410'><br><br>Sua Média é " +media+ "!!!</font>");
+			}		
+				
+		</script>
+	</head>
+	<body>
+	
+	</body>
+</html>
+	
+	

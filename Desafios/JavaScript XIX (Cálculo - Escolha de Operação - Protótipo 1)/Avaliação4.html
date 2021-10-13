@@ -1,0 +1,71 @@
+<html lang="pt-br">
+	<head>
+	<title>Curso de Javascript</title>
+	<meta charset="UTF-8">
+		<script>
+		
+		//Declarando as variáveis
+		
+		let num1 = parseFloat(prompt("Digite o valor do Primeiro Número","Digite aqui"));
+		let num2 = parseFloat(prompt("Digite o valor do Segundo Número","Digite aqui")); 
+		let escolha = parseInt(prompt("Digite o a opção desejada:\n1 - Soma\n2 - Subtração\n3 - Multiplicação\n4 - Divisão\n\n"));
+		let num1enum2, num2enum1;
+		
+		//Cálculos com relação a divisão com 0
+		
+		num1enum2 = num1/num2;
+		num2enum1 = num2/num1;
+	
+		//Switch de escolha da operação desejada 
+		
+		switch(escolha) {
+		
+		case 1 :
+			
+			document.write("O Resultado da soma de " +num1+ " mais " +num2+ " é " +(num1+num2)+ "<br><br>");
+			break;
+			
+		case 2 :
+		
+			document.write("O Resultado da soma de " +num1+ " menos " +num2+ " é "+(num1-num2)+ "<br><br>");
+			break;
+		
+		case 3 :
+		
+			document.write("O Resultado da soma de " +num1+ " multiplicado por " +num2+ " é "+(num1*num2)+ "<br><br>");
+			break;
+			
+		case 4 :
+			
+			//(if)Divisão com 0 / (else if)Divisão com 0 / (else)Divisão Normal
+			
+			if (num1enum2==Number.POSITIVE_INFINITY) {
+			
+			document.write("Não existe divisão com zero<br><br>Aperte F5 e selecione outro valor");
+			
+			}else if(num2enum1==Number.POSITIVE_INFINITY) {
+			
+			document.write("Não existe divisão com zero<br><br>Aperte F5 e selecione outro valor");
+			
+			}else {
+			
+			document.write("O Resultado da soma de " +num1+ " dividido por " +num2+ " é "+num2enum1+ "<br><br>");
+			
+			}
+			
+			break;
+			
+		default :
+		
+			document.write("Recomeçe e preencha os campos com os valores desejados.");
+		
+			}
+			
+		
+		</script>
+	</head>
+	<body>
+	
+	</body>
+</html>
+		

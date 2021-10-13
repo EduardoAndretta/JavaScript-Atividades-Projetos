@@ -1,0 +1,83 @@
+<html lang="pt-br">
+	<head>
+		<script src="jquery/jquery-3.6.0.min.js"></script>
+		<title>Curso de JavaScript</title>
+		<meta charset="UTF-8">
+			<script>
+			
+			//Testa se o documento está pronto
+			
+			$(document).ready(function(){
+			
+				//Botão Confirmar 
+				
+				$("#Confirmacao").click(function(){
+				
+					//Variável da Nota 1 (Formúlario)
+				
+					let nota1 = parseFloat($("#Nota1").val());
+				
+					//Variável da Nota 2 (Formúlario)
+					
+					let nota2 = parseFloat($("#Nota2").val());
+					
+					//Variável Nome (Formúlario)
+					
+					let nome = ($("#Nome").val());
+				
+					//Cálculando a Média
+					
+					let media = ((nota1 + nota2)/2);
+					
+					if(media>=7){        //Aprovado
+					
+						$("#Media").text("Média: " + media.toFixed(2));	
+						$("#Situacao").text("Aluno(a) "+ nome +", está Aprovado(a).");
+						
+						$("h1").css({color:'Green'});
+					 
+					}else if(media<5){   //Reprovado
+					
+						$("#Media").text("Média: " + media.toFixed(2));
+						$("#Situacao").text("Aluno(a) "+ nome +", está Reprovado(a).");
+						
+						$("h1").css({color:'Red'});
+					
+					
+					}else{               //Recuperação
+						
+						$("#Media").text("Média: " + media.toFixed(2));
+						$("#Situacao").text("Aluno(a) "+ nome +", está de Recuperação.");
+					
+						$("h1").css({color:'Orange'});
+						
+					}
+				
+				});
+		
+			});
+				
+		 </script>
+		 
+	</head>
+	<body>
+	
+		<!-- Formúlario -->
+		
+		<form name="fNotas" id="fNotas">
+			<label>Primeira Nota</label><br>
+			<input type="number" id="Nota1" name="Nota1"><br><br>
+			<label>Segunda Nota</label><br>
+			<input type="number" id="Nota2" name="Nota2"><br><br>
+			<label>Nome do Aluno</label><br>
+			<input type="text" id="Nome" name="Nome"><br><br><br>
+			
+			<input type="button" id="Confirmacao" value="Confirmacao"><br><br> 
+	
+			<!-- Resultado -->
+			
+			<h1 id="Media"></h1>
+			<h1 id="Situacao"></h1>
+	
+	</body>
+</html>

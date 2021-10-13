@@ -1,0 +1,132 @@
+<html lang="pt-br">
+	<head>
+		<script src="./jquery/jquery-3.6.0.min.js"></script>
+		<meta charset="UTF-8">
+		<title>Curso de JavaScript</title>
+			<script>
+			
+			//Testando se o documento está pronto.
+			
+			$(document).ready(function(){
+				
+					//Bola Preta --> Função ao entrar com o mouse em sua área.
+					
+					$("#bolaPreta1").mouseenter(function(){
+					
+						//Tag For para Alternar todo Simultaneamente  
+						
+						for(i = 0; i <= 18; i++){
+						
+						//Tag para gerar animação na Bola Preta. (Aumentando seu Tamanho)
+						
+						$("#bolaPreta"+i).animate({width:"60px", height:"60px"});
+					
+					}
+					
+					//Bola Preta --> Função ao sair com o mouse de sua área.
+					
+					}).mouseleave(function(){
+					
+						//Tag For para Alternar todo Simultaneamente  
+						
+						for(i = 0; i <= 18; i++){
+						
+						//Tag para gerar animação na Bola Preta. (Diminuindo seu Tamanho)
+						
+						$("#bolaPreta"+i).animate({width:"50px", height:"50px"});
+					
+					}
+					
+					});
+				
+				});
+			
+			</script>
+			
+			<!-- Estilizando as Imagens (Bola Preta) - Estilizando as div's -->
+			
+			<style>
+			
+				img { height:50px; width:50px; }
+				div { display:inline; }
+			
+			
+			</style>
+	
+	</head>
+	<body>
+	
+		
+		<!-- Repetidas (Bola Preta) -->
+		
+		<div id="bolaPreta1">
+			<img id="bolaPreta2" src="./img/bolaPreta.png" alt="Bola Preta">
+		</div>
+		
+		<div id="bolaPreta1">
+			<img id="bolaPreta3" src="./img/bolaPreta.png" alt="Bola Preta">
+		</div>
+		
+		<div id="bolaPreta1">
+			<img id="bolaPreta4" src="./img/bolaPreta.png" alt="Bola Preta">
+		</div>
+		
+		<div id="bolaPreta1">
+			<img id="bolaPreta5" src="./img/bolaPreta.png" alt="Bola Preta">
+		</div>
+		
+		<div id="bolaPreta1">
+			<img id="bolaPreta6" src="./img/bolaPreta.png" alt="Bola Preta">
+		</div>
+		
+		<div id="bolaPreta1">
+			<img id="bolaPreta7" src="./img/bolaPreta.png" alt="Bola Preta">
+		</div>
+		
+		<div id="bolaPreta1">
+			<img id="bolaPreta8" src="./img/bolaPreta.png" alt="Bola Preta">
+		</div>
+		
+		<div id="bolaPreta1">
+			<img id="bolaPreta9" src="./img/bolaPreta.png" alt="Bola Preta">
+		</div>
+		
+		<div id="bolaPreta1">
+			<img id="bolaPreta10" src="./img/bolaPreta.png" alt="Bola Preta">
+		</div>
+		
+		<div id="bolaPreta1">
+			<img id="bolaPreta11" src="./img/bolaPreta.png" alt="Bola Preta">
+		</div>
+		
+		<div id="bolaPreta1">
+			<img id="bolaPreta12" src="./img/bolaPreta.png" alt="Bola Preta">
+		</div>
+		
+		<div id="bolaPreta1">
+			<img id="bolaPreta13" src="./img/bolaPreta.png" alt="Bola Preta">
+		</div>
+		
+		<div id="bolaPreta1">
+			<img id="bolaPreta14" src="./img/bolaPreta.png" alt="Bola Preta">
+		</div>
+		
+		
+		<div id="bolaPreta1">
+			<img id="bolaPreta15" src="./img/bolaPreta.png" alt="Bola Preta">
+		</div>
+		
+		<div id="bolaPreta1">
+			<img id="bolaPreta16" src="./img/bolaPreta.png" alt="Bola Preta">
+		</div>
+		
+		<div id="bolaPreta1">
+			<img id="bolaPreta17" src="./img/bolaPreta.png" alt="Bola Preta">
+		</div>
+		
+		<div id="bolaPreta1">
+			<img id="bolaPreta18" src="./img/bolaPreta.png" alt="Bola Preta">
+		</div>
+	
+	</body>
+</html>

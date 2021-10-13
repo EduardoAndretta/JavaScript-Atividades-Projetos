@@ -1,0 +1,88 @@
+<html lang="pt-br">
+	<head>
+	<title>Curso de JavaScript</title>
+	<meta charset="UTF-8">
+		<script>
+			
+			
+			//Declarando função para mudar a cor do fundo
+			
+			function corFundo(cor){
+					
+				
+				//Declarando uma variável para armazenar o Id do <body> 
+				
+				let fundo = document.getElementById("fundo") 
+			
+				//Mudando a cor do fundo com style.backgroundColor e utilizando a cor que o usuário informou 
+				
+				fundo.style.backgroundColor = cor; 
+			
+			}
+			
+			//Declarando função para mudar a cor do Titúlo
+			
+			function corTitulo(cor){
+			
+			
+			//Declarando uma variável para armazenar o Id do <h1> 
+			
+				let tagH1 = document.getElementById("titulo");
+				
+				//Mudando a cor do fundo com style.color e utilizando a cor que o usuário informou	
+				
+				tagH1.style.color = cor;
+				
+			}
+		
+		
+		</script>
+	</head>
+	<body id="fundo"> <!-- Declarando Id para o Body -->
+	
+		
+		<!-- Titúlo com h1 -->
+		
+		<h1 id="titulo">Curso de JavaScript<h1><br><br>
+	
+		
+		<!-- Label informando a função dos Botões (Mudar cor de Fundo) -->
+		
+		<label>Cor de Fundo</label><br><br>
+		
+		<!-- Botões oferecendo escolha de Cor e informando a função corFundo(cor) -->
+		
+		<input type="button" value="Azul" onclick="corFundo('Blue');">
+		<input type="button" value="Vermelho" onclick="corFundo('Red');">
+		<input type="button" value="Amarelo" onclick="corFundo('Yellow');">
+		<input type="button" value="Verde" onclick="corFundo('Green');">
+		<input type="button" value="Rosa" onclick="corFundo('Pink');">
+		<input type="button" value="Azul Alice" onclick="corFundo('Aliceblue');"><br><br>
+		
+		<!-- Label informando a função dos Botões (Mudar cor do Titúlo) -->
+		
+		<label>Cor do Titúlo</label><br><br>
+		
+		<!-- Botões oferecendo escolha de Cor e informando a função corTitulo(cor) -->
+		
+		<input type="button" value="Azul" onclick="corTitulo('Blue');">
+		<input type="button" value="Vermelho" onclick="corTitulo('Red');">
+		<input type="button" value="Amarelo" onclick="corTitulo('Yellow');">
+		<input type="button" value="Verde" onclick="corTitulo('Green');">
+		<input type="button" value="Rosa" onclick="corTitulo('Pink');">
+		<input type="button" value="Azul Alice" onclick="corTitulo('Aliceblue');"><br><br>
+		
+		<!-- Label informando a função dos Botões (Restaurar Padrões Originais) -->
+		
+		<label>Restaurar Configuração Padrão</label><br><br>
+	
+		<!-- Botões oferecendo escolha de Comando e informando as funções corTitulo(cor) e corFundo(cor) -->
+	
+		<input type="button" value="Restaurar Cor de Fundo" onclick="corFundo('White');">
+		<input type="button" value="Restaurar Cor do Titúlo" onclick="corTitulo('Black');">
+		<input type="button" value="Restaurar todos Padrões" onclick="corTitulo('Black'); corFundo('White');">
+	
+	
+	
+	</body>
+</html>

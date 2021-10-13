@@ -1,0 +1,85 @@
+<html lang="pt-br">
+	<head>
+		<script src="jquery/jquery-3.6.0.min.js"></script>
+		<title>Curso de JavaScript</title>
+		<meta charset="UTF-8">
+			
+			<style>
+			
+				#DarkTheme{
+				
+					Color: White;
+					background-color: Black;
+					height: 200px;
+					width: 200px;
+					text-align: center;
+					font-weight: bold;
+				}
+			
+				p{
+				
+					padding-top: 43%;
+				
+				}
+				
+				#LightTheme{
+				
+					color: Black;
+					background-color: WhiteSmoke;
+					height: 200px;
+					width: 200px;
+					text-align: center;
+					font-family: Gigi;
+					font-weight: bold;
+				}
+		
+			</style>
+			
+			<script>
+			
+				//Testa se o documento está pronto
+				
+				$(document).ready(function(){
+				
+					//Click (Div do DarkTheme)
+					
+					$("#DarkTheme").click(function(){
+					
+						//Altera a Cor de Fundo, Cor da Fonte e a Família da Fonte
+						
+						$("#bod").css({backgroundColor:"Black",color:"White", "font-family":"Algerian"});
+					
+					});
+	
+						//Altera a Cor de Fundo, Cor da Fonte e a Família da Fonte
+					
+					$("#LightTheme").click(function(){
+					
+						$("#bod").css({backgroundColor:"White",color:"Black", "font-family":"Gigi"});
+						
+					});
+				
+				});
+	
+			</script>
+	</head>
+	<body id="bod">
+	
+		<!-- Dark Theme (div) -->
+		
+		<div id="DarkTheme">
+			<p>Dark Theme</p>
+		</div>
+		
+		<!-- Light Theme (div) -->
+		
+		<div id="LightTheme">
+			<p>Light Theme</p>
+		</div>
+	
+		<!-- h1 para Testar -->
+		
+		<h1>Fonte</h1>
+	
+	</body>
+</html>

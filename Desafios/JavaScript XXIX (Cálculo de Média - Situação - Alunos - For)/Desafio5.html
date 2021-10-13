@@ -1,0 +1,51 @@
+<html lang="pt-br">
+	<head>
+	<title>Curso de JavScript</title>
+	<meta charset="UTF-8">
+		<script>
+		
+		//Declarando Variáveis
+		
+		let media, quantidade;
+		let i, n;
+		let medias = ["-"];
+		
+		//Questionando Usuário
+		
+		
+		quantidade = prompt("Digite a Quantidade de Médias de Alunos","Digite aqui");
+		
+		
+		for(i=1; i<=quantidade; i++){
+		
+		medias[i] = parseFloat(prompt("Digite a Média do [" +i+ "] Aluno","Digite aqui"));	
+			
+	   
+		//Exibindo Resultados
+		
+		}
+		
+		for(n=1; n<=quantidade; n++){
+		
+		
+			if(medias[n]>=7){
+			
+			document.write("<font size=5 color='green'>A Situação do Aluno [" +n+ "] é Aprovado.<br>Média: " +medias[n]+"<br><br><font>");
+			
+			}else{
+		
+		
+			document.write("<font size=5 color='red'>A Situação do Aluno [" +n+ "] é Reprovado.<br>Média: " +medias[n]+"<br><br><font>");
+
+		
+			}
+
+	   }
+		
+		</script>
+	</head>
+	<body>
+	
+	
+	</body>
+</html>

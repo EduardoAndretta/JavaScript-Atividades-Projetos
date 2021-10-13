@@ -1,0 +1,141 @@
+<html lang="pt-br">
+	<head>
+		<script src="./jquery/jquery-3.6.0.min.js"></script>
+		<meta charset="UTF-8">
+		<title>Curso de JavaScript</title>
+			<script>
+			
+			//Testando se o documento está pronto.
+			
+			$(document).ready(function(){
+				
+					//Setando o fadeTo inicialmente --> Manter as imagens com o fade 0.3
+					//Período: Tempo todo(Tempo todo --> Sem interações)
+					
+					$("#kuruma").fadeTo(600,.3);
+					$("#da").fadeTo(600,0.3);
+					$("#yo").fadeTo(600,0.3);
+					$("#ne").fadeTo(600,0.3);
+					
+					
+					//Kanji Kuruma --> Função ao entrar com o mouse em sua área.
+					
+					$("#kuruma").mouseenter(function(){
+					
+						//Tag para gerar animação no Kanji. (Aumentando a Opacidade (1))
+						
+						$("#kuruma").fadeTo(600,1);
+					
+					//Kanji Kuruma --> Função ao sair com o mouse de sua área.
+					
+					}).mouseleave(function(){
+					
+						//Tag para gerar animação no Kanji. (Deixando a Opacidade Original (0.3))
+						
+						$("#kuruma").fadeTo(600,0.3);
+				
+					});
+				
+					
+					
+					
+					//Hiragana Da --> Função ao entrar com o mouse em sua área.
+					
+					$("#da").mouseenter(function(){
+					
+						//Tag para gerar animação no Hiragana. (Aumentando a Opacidade (1))
+						
+						$("#da").fadeTo(600,1);
+					
+					//Hiragana Da --> Função ao sair com o mouse de sua área.
+					
+					}).mouseleave(function(){
+					
+						//Tag para gerar animação no Hiragana. (Deixando a Opacidade Original (0.3))
+						
+						$("#da").fadeTo(600,0.3);
+				
+					
+					
+					
+					//Hiragana Yo --> Função ao entrar com o mouse em sua área.
+					
+					});
+				
+					$("#yo").mouseenter(function(){
+					
+						//Tag para gerar animação no Hiragana. (Aumentando a Opacidade (1))
+						
+						$("#yo").fadeTo(600,1);
+					
+					//Hiragana Yo --> Função ao sair com o mouse de sua área.
+					
+					}).mouseleave(function(){
+					
+						//Tag para gerar animação no Hiragana. (Deixando a Opacidade Original (0.3))
+						
+						$("#yo").fadeTo(600,0.3);
+				
+					});
+				
+				
+				
+					
+					//Hiragana Ne --> Função ao entrar com o mouse em sua área.
+					
+					$("#ne").mouseenter(function(){
+					
+						//Tag para gerar animação no Hiragana. (Aumentando a Opacidade (1))
+						
+						$("#ne").fadeTo(600,1);
+					
+					//Hiragana Ne --> Função ao sair com o mouse de sua área.
+					
+					}).mouseleave(function(){
+					
+						//Tag para gerar animação no Hiragana. (Deixando a Opacidade Original (0.3))
+						
+						$("#ne").fadeTo(600,0.3);
+				
+					});
+				
+				
+				
+				});
+			
+	
+			
+			</script>
+			
+			<!-- Estilizando as Imagens (Kanji e Hiraga) -->
+			
+			<style>
+			
+				img { height:100px; width:100px; }
+				img { display: block; }
+			
+			
+			</style>
+	
+	</head>
+	<body>
+	
+		<!-- Kanji Kuruma-->
+	
+		<img id="kuruma" src="./img/kuruma.jpg">
+		
+		<!-- Hiragana Da -->
+		
+		<img id="da" src="./img/da.png">
+		
+		<!-- Hiragana Yo -->
+		
+		<img id="yo" src="./img/yo.png">
+		
+		<!-- Hiragana Ne -->
+		
+		<img id="ne" src="./img/ne.png">
+	
+	
+	</body>
+</html>

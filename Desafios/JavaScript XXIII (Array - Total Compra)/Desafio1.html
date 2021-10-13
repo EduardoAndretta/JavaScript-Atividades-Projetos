@@ -1,0 +1,47 @@
+<html lang="pt-br">
+	<head>
+	<title>Curso de JavaScript</title>
+	<meta charset="UTF-8">
+		<script>
+		
+			//Declarando Vetor(Array)
+		
+			let produtos = new Array();
+		
+			//Declarando Váriavel
+		
+			let total;
+		
+			//Atribuindo e Requisitando Valores
+		
+			produtos[0] = parseFloat(prompt("Digite o Valor do Primeiro Produto","Digite aqui"));
+			produtos[1] = parseFloat(prompt("Digite o Valor do Segundo Produto","Digite aqui"));
+			produtos[2] = parseFloat(prompt("Digite o Valor do Terceiro Produto","Digite aqui"));
+			produtos[3] = parseFloat(prompt("Digite o Valor do Quarto Produto","Digite aqui"));
+			produtos[4] = parseFloat(prompt("Digite o Valor do Quinto Produto","Digite aqui"));
+		
+			//Realizando o Cálculo do Total
+		
+			total = (produtos[0] + produtos[1] + produtos[2] + produtos[3] + produtos[4]);
+		
+			//Exibindo Resultado para o Usuário
+		
+			//Exibindo dados Informados anteriormente
+		
+			document.write("<font size=5 >Dados Informados<font><br>");
+			document.write("Preço do Primeiro Produto: R$" +produtos[0]+ "<br>");
+			document.write("Preço do Segundo Produto: R$" +produtos[1]+ "<br>");
+			document.write("Preço do Terceiro Produto: R$" +produtos[2]+ "<br>");
+			document.write("Preço do Quarto Produto: R$" +produtos[3]+ "<br>");
+			document.write("Preço do Quinto Produto: R$" +produtos[4]+ "<br>");
+		
+			//Exibindo o Total
+		
+			document.write("<br>Total: R$" +total.toFixed(2));
+		
+		</script>
+	</head>
+	<body>
+	
+	</body>
+</html>

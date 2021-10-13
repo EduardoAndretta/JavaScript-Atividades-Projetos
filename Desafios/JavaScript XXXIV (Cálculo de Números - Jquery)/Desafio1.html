@@ -1,0 +1,60 @@
+<! docytype html >
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Curso de JavaScript</title>
+		<script src="jquery/jquery-3.6.0.min.js"></script>
+	
+		<script>
+		
+            //Testa se o documento está pronto
+			
+			$(document).ready(function(){
+			
+				//Botão Soma 
+				
+				$("#Soma").click(function(){
+				
+				//Variável do Número 1 (Formúlario)
+				
+				let num1 = parseFloat($("#Num1").val());
+				
+				//Variável do Número 2 (Formúlario)
+				
+				let num2 = parseFloat($("#Num2").val());
+				
+				//Somando os Números
+				
+				let resultado = num1 + num2;
+				
+				//Informando Resultado no Formúlario 
+				
+				$("#Resultado").val(resultado);
+				
+				});
+			
+			});
+	
+		
+		</script>
+	
+	</head>
+	<body>
+	
+		<!-- Formúlario -->
+	
+		<form id="fNumeros" name="fNumeros"/>
+			<label>Primeiro Número</label>
+			<input type="number" id="Num1" name="Num1"/><br/><br/>
+			<label>Segundo Número</label>
+			<input type="number" id="Num2" name="Num2"/><br/><br/>
+			
+			<input type="button" id="Soma" value="Soma"/><br/><br/>
+			
+		<!-- Resultado -->	
+			
+			<label>Resultado</label>
+			<input type="number" id="Resultado" name="Resultado" disabled/>
+	
+	</body>
+</html>

@@ -1,0 +1,75 @@
+<html lang="pt-br">
+	<head>
+	<title>Curso de JavaScript</title>
+	<meta charset="UTF-8">
+		<script>
+		
+			//Declarando a Função que irá realizar a Soma
+			
+			function soma(){
+			
+			//Esta primeira linha irá indicar o Formulario com a - tag - , ou seja, "Numeros".
+			
+			let tag = document.forms["Numeros"];
+			
+			//Esta segunda linha irá coletar o Primeiro Número do Formulario, "fNum1" indica o input.
+			
+			let num1 = tag.elements["fNum1"].value;
+			
+			//Esta terceira linha irá coletar o Segundo Número do Formulario, "fNum2" indica o input.
+			
+			let num2 = tag.elements["fNum2"].value;
+			
+			//Esta quarta linha irá realizar a Soma entre os dois números.
+			
+			let total = (parseFloat(num1) + parseFloat(num2));
+			
+			//Esta quinta linha irá Exibir o Resultado no input "fTotal" do formulario.
+			
+			tag.elements["fTotal"].value = total;
+			}
+		
+		
+		</script>
+	</head>
+	<body>
+	
+		<!-- Declara o Formulario com Nome, Ação e Metodo de Input -->
+		
+		<form name ="Numeros" action="#" method="post">
+			
+			<!-- Label Mostrando o que deve ser inserido no Form -->
+			
+			<label>Primeiro Número<label><br>
+			
+			<!-- Criando a Caixa de Texto do Formulario com Nome, Tipo e Valor que irá ter internamente -->
+			<!-- Esta irá pedir o Número 1 -->
+			
+			
+			<input type="text" name="fNum1" value="Digite o Primeiro Número"><br><br>
+			
+			<!-- Label Mostrando o que deve ser inserido no Form -->
+			
+			<label>Segundo Número<label><br>
+			
+			<!-- Criando a Caixa de Texto do Formulario com Nome, Tipo e Valor que irá ter internamente -->
+			<!-- Esta irá pedir o Número 1 -->
+			
+			<input type="text" name="fNum2" value="Digite o Segundo Número"><br><br>
+			
+			<!-- Criando o Botão para realizar a Soma dos Dois número e chamando a função
+			Com o OnClick, realizando o cálculo e guardando na memoria -->
+			
+			<input type="button" value="Somar" onclick="soma();"><br><br>
+			
+			<!-- Label expecificando que o Resultado Ficará no Form abaixo -->
+			
+			<label>Resultado da Soma:<label><br>
+			
+			<!-- Criando a caixa de Texto que irá conter o Resultado da Soma 
+			O "disable" Neste caso, desabilita a caixa de texto, não deixando o usuário utiliza-la -->
+			
+			<input type="text" name="fTotal" disabled><br><br>
+	
+	</body>
+</html>

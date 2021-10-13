@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+			<meta http-equiv="X-UA-Compatible" content="IE=edge">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<title>Curso de JavaScript</title>
+			<script src="jquery/jquery-3.6.0.min.js"></script>
+				<script>
+		
+					//Testa se o documento está pronto
+        
+					$(document).ready(function(){
+            
+						//Função Click (Theme Dark)
+						
+						$("#Dark").click(function(){//Função executada ao clicar no objeto com o id azul 
+                
+							$("#corpo").css({backgroundColor:"Black", color:"white", "font-family":"Algerian"});
+						
+							});
+            
+						//Função Click (Theme Light)
+						
+						$("#Ligth").click(function(){//Função executada ao clicar no objeto com o id azul 
+                
+							$("#corpo").css({backgroundColor:"white",color:"black", "font-family":"Gigi" });//Altera o estilo
+            
+							});
+       
+						});
+    
+			</script>
+	</head>
+	<body id="corpo">
+
+    <h3>
+        <div id="Dark">
+            Tema Dark 
+        </div>
+        <div id="Ligth">
+            Tema Ligth
+        </div>
+    </h3> 
+    
+	</body>
+</html>

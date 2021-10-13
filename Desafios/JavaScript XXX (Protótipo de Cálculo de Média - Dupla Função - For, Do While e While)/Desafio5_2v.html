@@ -1,0 +1,74 @@
+<html lang="pt-br">
+	<head>
+	<title>Curso de JavScript</title>
+	<meta charset="UTF-8">
+		<script>
+		
+		//Declarando Variáveis
+		
+		let calculo, quantidade, resultado, total, sair;
+		let i, o;
+		let notas = new Array();
+		let medias = ["-"];
+		
+		//Questionando Usuário
+			
+			
+		
+	
+		   
+		   
+		   calculo = prompt("Digite Sim caso for Cálcular a Média\nDigite Não caso contrario","Digite aqui");
+		   
+		   if(calculo=="Sim"){
+		   
+				do{
+		   
+					quantidade = 0;
+					
+					sair = prompt("Digite -Sair- caso queira parar","Digite aqui");
+					
+					if(sair!="Sair"){
+					
+		                    quantidade = parseInt(prompt("Digite a Quantidade de Notas Desejadas\nDigite - Sair - para sair","Digite aqui"));
+		   
+							quantidade = quantidade + 1;
+							
+							for(i=1; i<quantidade; i++){
+				
+								notas[i] = parseInt(prompt("Digite a [" +i+ "] Nota","Digite aqui"));
+		   
+		   
+								resultado = 0.0;
+								total = 0.0;
+							
+							}				
+							
+							
+							for(n=0; n<notas.length; n++){
+					
+								total += notas.length[n];
+				
+								resultado = total/quantidade;
+				
+								medias.pop(resultado);
+		   
+								}
+		   
+			}else{}
+
+		 }while(sair!="Sair");
+		
+		}else{}
+			
+		document.write(medias[0]);
+		
+		
+		
+		</script>
+	</head>
+	<body>
+	
+	
+	</body>
+</html>

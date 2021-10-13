@@ -1,0 +1,86 @@
+<html lang="pt-br">
+	<head>
+	<title>Curso de JavaScript</title>
+	<meta charset="UTF-8">
+		<script>
+		
+			//Declarando Variáveis
+			
+			let produtos = new Array(); 
+			let precos = new Array();
+			let preco;
+			let total = 0.0;                           //Total em duas casas decimais
+			let produto;
+			let cont = 0, p = 0, i = 0, o = 0, l = 0;  //Contadores
+			
+			//Utilizando o Do While
+			
+			do{
+					
+					//Requisitando o Nome do Produto ou "fim" para sair
+					
+					produto = produtos[l] = prompt("Digite o Nome do Produto ou fim para sair","Digite aqui");
+			
+					//Contador para o Array produtos()
+					
+					l++;
+			
+					//Caso for diferente de "fim", o usuário terá que informar o Preço 
+					
+					if(produto!="fim"){
+
+						preco = precos[o] = parseFloat(prompt("Digite o Valor do Produto","Digite aqui"));
+
+						//Contador para o Array precos()
+						
+						o++;
+					
+						//Conta para somar o valor Total
+						
+						total = total + preco;
+				
+					//Caso for igual a "fim", o usuário terá o resultado Total da Compra
+					
+					}else{
+					
+						///Removendo o "fim" do Array
+					
+						produtos.pop("fim");
+					
+						//Informando o Total
+						
+						document.write("<font size=8><br>Resultado<br><font>");
+						document.write("<font size=6><br>Total: " +total.toFixed(2)+ "<br><font>");
+					
+					}
+				
+				
+			}while(produto!="fim");
+			
+			//Porduto Informados
+			
+			document.write("<font size=8><br>Produtos Informados<br><font>");
+			
+			
+			//Utilizando o While
+			
+			while(cont<produtos.length){	
+				
+			
+					//Informando a Lista de Produtos 
+			
+					document.write("<font size=6><br>Produto: " +produtos[p]+ "<br>Preço: R$" +precos[i]+ "<br><font>");
+					
+					//Contadores para o Array e o While
+
+					p++;
+					i++;
+					cont++;
+			}
+		
+		</script>
+	</head>
+	<body>
+	
+	</body>
+</html>

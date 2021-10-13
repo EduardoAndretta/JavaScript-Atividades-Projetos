@@ -1,0 +1,29 @@
+<html lang="pt-br">
+	<head>
+	<title>Curso de JavaScript</title>
+	<meta charset="UTF-8">
+		<script>
+			
+			//Delcarando, solicitando e convertendo variáveis
+			let nota1 = parseFloat(prompt("Por favor, digite a primeira nota:\n════════════════════════════","Digite aqui"));
+			let nota2 = parseFloat(prompt("Por favor, digite a segunda nota:\n════════════════════════════","Digite aqui"));
+			let resultado;
+			
+			//Calculando a média 
+			resultado = (nota1+nota2)/2;
+			
+			//Adicionando IF, ELSE IF e ELSE para analisar a váriavel - resultado -
+			if(resultado>=7){
+				document.write("Você está Aprovado!!!<br>Sua Média é "+resultado);
+			}else if(resultado<5){
+				document.write("Você está Reprovado!!!<br>Sua Média é "+resultado);
+			}else{
+				document.write("Você está de Recuperação!!!<br>Sua Média é "+resultado);
+			}		
+		
+		</script>
+	</head>
+	<body>
+	
+	</body>
+</html>

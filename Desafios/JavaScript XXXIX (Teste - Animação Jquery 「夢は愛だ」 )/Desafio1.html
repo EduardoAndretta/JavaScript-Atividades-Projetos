@@ -1,0 +1,135 @@
+<html lang="pt-br">
+	<head>
+		<script src="./jquery/jquery-3.6.0.min.js"></script>
+		<meta charset="UTF-8">
+		<title>Curso de JavaScript</title>
+			<script>
+			
+				//Testando se o documento está pronto.
+				
+				$(document).ready(function(){
+				
+					//Kanji Yume --> Função ao entrar com o mouse em sua área.
+					
+					$("#yume").mouseenter(function(){
+					
+						//Tag para gerar animação no Kanji. (Aumentando seu Tamanho)
+						
+						$("#yume").animate({width:"125px", height:"125px"});
+					
+					//Kanji Yume --> Função ao sair com o mouse de sua área.
+					
+					}).mouseleave(function(){
+					
+						//Tag para gerar animação no Kanji. (Diminuindo seu Tamanho)
+						
+						$("#yume").animate({width:"100px", height:"100px"});
+				
+					});
+				
+					
+					
+					
+					//Hiragana Wa(Partícula) --> Função ao entrar com o mouse em sua área.
+					
+					$("#wa").mouseenter(function(){
+					
+						//Tag para gerar animação no Hiragana. (Aumentando seu Tamanho)
+						
+						$("#wa").animate({width:"125px", height:"125px"});
+					
+					//Hiragana Wa(Partícula) --> Função ao sair com o mouse de sua área.
+					
+					}).mouseleave(function(){
+					
+						//Tag para gerar animação no Hiragana. (Diminuindo seu Tamanho)
+						
+						$("#wa").animate({width:"100px", height:"100px"});
+				
+					});
+				
+					
+					
+					
+					//Kanji Ai --> Função ao entrar com o mouse em sua área.
+					
+					$("#ai").mouseenter(function(){
+					
+						//Tag para gerar animação no Kanji. (Aumentando seu Tamanho)
+						
+						$("#ai").animate({width:"125px", height:"125px"});
+					
+					//Kanji Ai --> Função ao sair com o mouse de sua área.
+					
+					}).mouseleave(function(){
+					
+						//Tag para gerar animação no Kanji. (Diminuindo seu Tamanho)
+						
+						$("#ai").animate({width:"100px", height:"100px"});
+				
+					});
+					
+					
+					
+					
+					//Hiragana Da --> Função ao entrar com o mouse em sua área.
+					
+					$("#da").mouseenter(function(){
+					
+						//Tag para gerar animação no Hiragana. (Aumentando seu Tamanho)
+						
+						$("#da").animate({width:"125px", height:"125px"});
+					
+					//Hiragana Da --> Função ao sair com o mouse de sua área.
+					
+					}).mouseleave(function(){
+					
+						//Tag para gerar animação no Hiragana. (Diminuindo seu Tamanho)
+						
+						$("#da").animate({width:"100px", height:"100px"});
+				
+					});
+				
+				});
+			
+			</script>
+			
+			<!-- Estilizando as Imagens (Kanji e Hiraga) - Estilizando as div's -->
+			
+			<style>
+			
+				img{ height:100px; width:100px;  }
+				div{ display:block; }
+			
+			</style>
+	
+	
+	</head>
+	<body>
+	
+		<!-- Kanji Yume -->
+		
+		<div id="yume1">
+			<img id="yume" src="./img/yume2.jpg">
+		</div>
+		
+		<!-- Hiragana Wa (Partícula) -->
+		
+		<div id="wa1">
+			<img id="wa" src="./img/hawa.png">
+		</div>
+		
+		<!-- Kanji Ai -->
+		
+		<div id="ai1">
+			<img id="ai" src="./img/ai2.jpg">
+		</div>
+		
+		<!-- Hiragana Da -->
+		
+		<div id="da1">
+			<img id="da" src="./img/da.png">
+		</div>
+	
+	</body>
+</html>

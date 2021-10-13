@@ -1,0 +1,48 @@
+<html lang="pt-br">
+	<head>
+	<title>Curso de JavaScript</title>
+	<meta charset="UTF-8">
+		<script>
+		
+			//Declarando Variáveis
+			
+			let material = ["-"];
+			let itens, i;
+			
+			//Requesitando a Quantidade de Materiais
+			
+			itens = parseInt(prompt("Digite a Quantidade de Itens desejados","Digite aqui"));
+			
+			//Utilizadno o For
+			
+			for(i=1; itens>=i; i++){
+			
+				//Requesitando Nomes (Materiais)
+				
+				material[i] = prompt("[" +i+ "] - Digite o Nome do Mateiral Requisitado");
+			
+			}
+		
+			//Título Lista de Materiais
+
+			document.write("<font size =6>Lista de Materiais Escolares<br><br><font>");
+			
+			//Utilizando o For novamente
+			
+			for(i=1; itens>=i; i++){
+			
+			
+				//Exibindo a Lista de Materiais
+			
+				document.write("<font size = 5>[" +i+ "] - " +material[i]+ "<br><font>");
+			
+			}
+		
+		
+		</script>
+	</head>
+	<body>
+	
+	
+	</body>
+</html>

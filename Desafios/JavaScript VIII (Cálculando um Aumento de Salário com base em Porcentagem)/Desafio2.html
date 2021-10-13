@@ -1,0 +1,27 @@
+<html lang="pt-br">
+	<head>
+	<title>Curso de JavaScript</title>
+	<meta charse="UTF-8">
+		<script>
+			
+			//Definindo as variáveis
+			let salario,novosalario,aumento,porcentagem;
+			
+			//Requisitando informações na Prompt e convertendo para Float
+			salario=parseFloat(prompt("Por favor, digite o Sálario base:","Digite aqui."));
+			porcentagem=parseFloat(prompt("Por favor, digite a Porcentagem de aumento: ","Digite aqui"));
+			
+			//Calculando o Aumento
+			aumento = salario*porcentagem/100;
+			novosalario = salario+aumento;
+			
+			//Exibindo o resultado do Aumento no document e corrigindo duas casas decimais
+			document.write("O valor acrescentado ao sálario foi de: R$" +aumento.toFixed(2)+ "!!!<br>");
+			document.write("O valor total do novo sálario é: R$" +novosalario.toFixed(2)+ "!!!<br>");
+		
+		</script>
+	</head>
+	<body>
+	
+	</body>
+</html>

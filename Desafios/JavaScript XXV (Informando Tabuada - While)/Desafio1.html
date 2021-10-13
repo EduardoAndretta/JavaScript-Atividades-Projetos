@@ -1,0 +1,84 @@
+<html lang="pt-br">
+	<head>
+	<title>Curso de JavaScript</title>
+	<meta charset="UTF-8">
+		<script>
+		
+			//Declarando Variáveis
+			
+			let tabuada, quantidade, resultado, questao, seq ;
+			
+			//Requisitando Dados (Acima de 0)
+			
+				tabuada= parseInt(prompt("Informe a Tabuada desejada","Digite aqui"));
+				
+					//Caso o usuário digitar um valor igual ou abaixo de 0(zero)
+					
+					while(tabuada<=0){
+					
+						alert("Recomece e digite uma tabuada Válida");
+						tabuada= parseInt(prompt("Informe a Tabuada desejada","Digite aqui"));
+					}
+				
+				quantidade= parseInt(prompt("Informe a Quantidade de Calculos","Digite aqui"));
+				
+					//Caso o usuário digitar um valor igual ou abaixo de 0(zero)
+					
+					while(quantidade<=0){
+					
+						alert("Recomece e digite uma quantidade Válida");
+						quantidade= parseInt(prompt("Informe a Quantidade de Calculos","Digite aqui"));
+					}
+				
+				//Questionando o Usuário em relação a tabuada do 0(zero)
+				
+				questao = (prompt("Digite SIM caso querer a Tabuada a partir do 0(zero).\nDigite NÃO caso contrario.\nEx: SIM/NÃO","Digite aqui"));
+				
+					if(questao=="NÃO"){
+						
+						//Alterando "seq" para não aprecer a tabuada do 0(zero)
+						
+						seq = 1;
+					
+					}else if(questao=="SIM"){
+					
+						//Alterando "seq" para aparecer a tabuada do 0(zero)
+						
+						seq = 0;
+						
+					}else{
+					
+						//Caso o valor não for "SIM"/"NÃO", o usuário será redirecionando para o início novamente
+						
+						alert("Recomece e digite SIM ou NÃO");
+						location.reload(true)
+					}
+					
+					
+				
+			//Utilizando o While
+			
+			while(seq<=quantidade){
+			
+				//Realizando o Cálculo
+				
+				resultado = tabuada*seq;
+				
+				//Exibindo o Resultado
+				
+				document.write("<font size=6>" +tabuada+ " X " +seq+ " = " +resultado+ "<br><font>");
+				
+				//Contador para criar a tabuada
+				
+				seq++
+			
+			}
+		
+		
+		</script>
+	</head>
+	<body>
+	
+	
+	</body>
+</html>

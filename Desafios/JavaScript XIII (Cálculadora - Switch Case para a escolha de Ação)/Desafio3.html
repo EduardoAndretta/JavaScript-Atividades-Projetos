@@ -1,0 +1,37 @@
+<html lang="pt-br">
+	<head>
+	<title>Curso de JavaScript</title>
+	<meta charset="UTF-8">
+		<script>
+			
+			//Declarando variáveis
+			let num1 = parseFloat(prompt("Digite o primeiro número\n═══════════════════════","Digite aqui"));
+			let num2 = parseFloat(prompt("Digite o segundo número\n═══════════════════════","Digite aqui"));
+			
+			//Pedindo a escolha de ação para o usuário
+			let escolha = parseInt(prompt("Escolha uma opção e digite o número correspondente\n1-Soma\n2-Subtração\n3-Multiplicação\n4-Divisão","Digite aqui"));
+			
+			//Realizando o cálculo com base na variável - escolha - 
+			switch(escolha){
+		case 1 :
+			document.write("O Resultado é : " +(num1+num2));
+			break;
+		case 2 :
+			document.write("O Resultado é : " +(num1-num2));
+			break;
+		case 3 :
+			document.write("O Resultado é : " +(num1*num2));
+			break;
+		case 4 :
+			document.write("O Resultado é : " +(num1/num2));
+			break;
+		default:
+			document.write("O número é invalido, tente novamente");
+		}
+		
+		</script>
+	</head>
+	<body>
+	
+	</body>
+</html>

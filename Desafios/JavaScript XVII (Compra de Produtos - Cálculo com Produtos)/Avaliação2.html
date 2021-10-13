@@ -1,0 +1,44 @@
+<html lang="pt-br">
+	<head>
+	<title>Curso de JavaScript</title>
+	<meta charset="UTF-8">
+		<script>
+		
+		//Declarando as váriaveis
+		
+		let produto1 = prompt("Digite aqui o Primeiro Produto que deseja comprar");
+		let preco1 = parseFloat(prompt("Digite aqui o preço do Primeiro Produto"));
+		let qnt1 = parseInt(prompt("Digite aqui a quantidade de semelhantes do Primeiro Produto"));
+		
+		let produto2 = prompt("Digite aqui o Segundo Produto que deseja comprar");
+		let preco2 = parseFloat(prompt("Digite aqui o preço do Segundo Produto"));
+		let qnt2 = parseInt(prompt("Digite aqui a quantidade de semelhantes do Segundo Produto"));
+		
+		let produto3 = prompt("Digite aqui o Terceiro Produto que deseja comprar");
+		let preco3 = parseFloat(prompt("Digite aqui o preço do Terceiro Produto"));
+		let qnt3 = parseInt(prompt("Digite aqui a quantidade de semelhantes do Terceiro Produto"));
+		
+		let total1, total2, total3, totalComp;
+		
+		//Realizando os cálculos
+		
+		total1 =parseFloat(preco1*qnt1);
+		total2 =parseFloat(preco2*qnt2);
+		total3 =parseFloat(preco3*qnt3);
+		totalComp =parseFloat(total1 + total2 + total3);
+		
+		//Exibindo o Resultado da Compra 買物
+		
+		document.write("Sua Compra 買物 :<br>");
+		document.write("<br>Produto: " + produto1 +"<br>Preço: R$"+ preco1 +"<br>Quantidade: "+ qnt1 +"<br>Total: R$"+ total1 +"<br>");		
+		document.write("<br>Produto: " + produto2 +"<br>Preço: R$"+ preco2 +"<br>Quantidade: "+ qnt2 +"<br>Total: R$"+ total2 +"<br>");	
+		document.write("<br>Produto: " + produto3 +"<br>Preço: R$"+ preco3 +"<br>Quantidade: "+ qnt3 +"<br>Total: R$"+ total3 +"<br>");	
+		document.write("<br>O total da Compra é: R$"+ totalComp);
+		
+		
+		</script>
+	</head>
+	<body>
+	
+	</body>
+</html>

@@ -1,0 +1,60 @@
+<html lang="pt-br">
+	<head>
+	<title>Curso de JavaScript</title>
+	<meta charset="UTF-8">
+		<script>
+		
+			//Declarando Vetor(Array)
+		
+			let notas = new Array();
+			
+			//Declarando Variáveis
+			
+			let media;
+			
+			//Atribuindo Valores ao Array
+			
+			notas[0] = parseFloat(prompt("Digite a Primeira Nota","Digite aqui"));
+			notas[1] = parseFloat(prompt("Digite a Segunda Nota","Digite aqui"));
+			notas[2] = parseFloat(prompt("Digite a Terceira Nota","Digite aqui"));
+			notas[3] = parseFloat(prompt("Digite a Quarta Nota","Digite aqui"));
+			
+			//Realizando o Cálculo da Média
+		
+			media = ((notas[0] + notas[1] + notas[2] + notas[3])/4);
+			
+			//Exibindo Resultado para o Usuário
+			
+			//Situação do Indivíduo conforme a Váriavel - media -
+			
+			if(media>=7){
+			
+			document.write("<font size=6 color='green'>Você está Aprovado!<font><br>");
+			document.write("<font size=6 color='green'>Média: " +media.toFixed(2)+ "<font><br>");
+			
+			}else if(media<5){
+			
+			document.write("<font size=6 color='red'>Infelizmente você está Reprovado.<font><br>");
+			document.write("<font size=6 color='red'>Média: " +media.toFixed(2)+ "<font><br>");
+			
+			}else{
+			
+			document.write("<font size=6 color='#fff410'>Você está de Recuperação!<font><br>");
+			document.write("<font size=6 color='#fff410'>Média: " +media.toFixed(2)+ "<font><br>");
+			
+			}
+			
+			//Exibindo Informações anteriores
+			
+			document.write("<br><font size=6 color='black'>Dados Informados<font>");
+			document.write("<br><font size=5>Primeira Nota: <font>" +notas[0]);
+			document.write("<br><font size=5>Segunda Nota: <font>" +notas[1]);
+			document.write("<br><font size=5>Terceira Nota: <font>" +notas[2]);
+			document.write("<br><font size=5>Quarta Nota: <font>" +notas[3]);
+		
+		</script>
+	</head>
+	<body>
+	
+	</body>
+</html>

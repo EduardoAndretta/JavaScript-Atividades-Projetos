@@ -1,0 +1,131 @@
+<html lang="pt-br">
+	<head>
+	<title>Curso de JavaScript</title>
+	<meta charset="UTF-8">
+		<script>
+		
+			
+			//Declarando Função para Calcular e Informar Média
+			
+			function somarMedia(){
+			
+				//Escolhendo o Formulario
+				
+				let tag =  document.forms["AlunoNotas"];
+				
+				//Guardando o Nome na Memoria
+				
+				let nome = tag.elements["fNome"].value;
+				
+				//Guaradando a Primeira Nota
+				
+				let nota1 = tag.elements["fNota1"].value;
+				
+				//Guardando a Segunda Nota
+				
+				let nota2 = tag.elements["fNota2"].value;
+			
+			
+				//Realizando o Cálculo da Média
+			
+				let total = (parseFloat(nota1) + parseFloat(nota2));
+				let media = (parseFloat(total) / 2);
+		
+				
+				//Informando a Média com o inner.HTML e ajustando para duas casas decimais
+			
+				let mediaDocument = document.getElementById("med");
+				mediaDocument.innerHTML = media.toFixed(2);
+			
+				
+				//Informando o Nome do Aluno com inner.HTML
+				
+				let alunoDocument= document.getElementById("alun");
+				let aluno = nome; 
+				alunoDocument.innerHTML = aluno;
+		
+			
+				//Informando a Situação atraves do IF e Else
+			
+				//Caso a Média for menor que 7
+				
+				if(media<7){
+			
+					//Informando Reprovação com cor Vermelha e com inner.HTML
+					
+					let reprovadoDocument = document.getElementById("situacao");
+					let reprovado = "<font color='Red'>Reprovado</font>";
+					reprovadoDocument.innerHTML = reprovado;
+			
+				//Caso a Média for igual ou maior que 7
+				
+				}else{
+				
+					//Informando Aprovação com cor Verda e com inner.HTML
+					
+					let aprovadoDocument = document.getElementById("situacao");
+					let aprovado ="<font color='Green'>Aprovado</font>";
+					aprovadoDocument.innerHTML = aprovado;
+			
+				}
+		
+		}
+		
+		</script>
+	
+	</head>
+	<body>
+		
+		
+		
+		<!-- Titúlo Informativo sobre o Site de Cálculo -->
+		
+		<h3>Calcular Notas<h3>
+		
+		
+		<!-- Iniciando o Formulario AlunosNotas -->
+		
+		<form name="AlunoNotas" action="#" method="post">
+		
+		<!-- Requesitando o Nome do Aluno e guardadando no fNome -->
+		
+		<label>Nome do Aluno</label><br><br>
+		<input type="text" value="Digite o Nome aqui" name="fNome"><br><br>
+		
+		<!-- Requesitando a Primeira Nota e guardadando no fNota1 -->
+		
+		<label>Primeira Nota</label><br><br>
+		<input type="text" value="Digite a Primeira Nota aqui" name="fNota1"><br><br>
+		
+		<!-- Requesitando a Segunda Nota e guardadando no fNota2 -->
+		
+		<label>Segunda Nota</label><br><br>
+		<input type="text" value="Digite a Segunda Nota aqui" name="fNota2"><br><br>
+		
+		
+		<!-- Botão para Confirmar Informações e usar a função somarMedia() para realizar o Cálculo 
+		da Média e informar Situação do Aluno-->
+		
+		<input type="button" value="Confirmar" onclick="somarMedia();"><br><br><br>
+
+		
+		<!-- Informando Resultados -->
+		
+		<!-- Nome do Aluno  -->
+		
+		<h3>Aluno: </h3>
+		<h3 id="alun">----------<h3><br>
+		
+		<!-- Média do Aluno  -->
+		
+		<h3>Média:</h3>
+		<h3 id="med">----------</h3><br>
+		
+		<!-- Situação do Aluno  -->
+		
+		<h3>Situação:</h3>
+		<h3 id="situacao">----------</h3>
+	
+	
+	</body>
+</html>
