@@ -1,0 +1,36 @@
+<html lang="pt-br">
+	<head>
+	<title>Curso de JavaScript</title>
+	<meta charset="UTF-8">
+		<script>
+		
+			//Declarando o Vetor(Array)
+			
+			let notas = new Array();
+			let media;
+			
+			//Atribundo Valores
+			
+			notas[0]=parseFloat(prompt("Digite a Primeira Nota","Digite aqui"));
+			notas[1]=parseFloat(prompt("Digite a Segunda Nota","Digite aqui"));
+			notas[2]=parseFloat(prompt("Digite a Terceira Nota","Digite aqui"));
+			notas[3]=parseFloat(prompt("Digite a Quarta Nota","Digite aqui"));
+			 
+			//Realizando o Cálculo da Média
+			
+			media = (notas[0]+notas[1]+notas[2]+notas[3])/4;
+		
+			//Exibindo no Documento
+			
+			document.write("Nota 1: " +notas[0]+ "<br>");
+			document.write("Nota 2: " +notas[1]+ "<br>");
+			document.write("Nota 3: " +notas[2]+ "<br>");
+			document.write("Nota 4: " +notas[3]+ "<br>");
+			document.write("Média: " +media+ "<br>");
+		
+		</script>
+	</head>
+	<body>
+	
+	</body>
+</html>	

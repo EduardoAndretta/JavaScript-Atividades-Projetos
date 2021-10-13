@@ -1,0 +1,29 @@
+<html lang="pt-br">
+	<head>
+	<title>Curso de JavaScript</title>
+	<meta charset="UTF-8">
+		<script>
+		//Declarando Variáveis
+			
+		let total = 0.0;
+		let op = 0;
+		
+		//Utilizando o Do While
+		
+		do{ //Faça um Bloco de Comandos abaixo
+			
+			op = parseFloat(prompt("Digite o preço do produto ou 0(zero) para sair:","Digite aqui"));
+			total = total + op;
+			
+		}while(op!=0); //Enquanto op for diferente de zero
+		
+			document.write("O total da compra foi R$" +total.toFixed(2));
+				//.toFixed arredonda o valor para duas casa decimais. Ex 9.99
+	
+		</script>
+	</head>
+	<body>
+	
+	
+	</body>
+</html>
